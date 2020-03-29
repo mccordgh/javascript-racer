@@ -1,13 +1,13 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html>
 <head>
   <title>Javascript Racer - v4 (final)</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link href="common.css" rel="stylesheet" type="text/css" />
-</head> 
+</head>
 
-<body> 
+<body>
 
   <table id="controls">
     <tr>
@@ -18,7 +18,7 @@
         <a href='v4.final.html'>final</a>
       </td>
     </tr>
-    <tr><td id="fps" colspan="2" align="right"></td></tr>
+    <tr><td id="fps" colspan="2" justify="right"></td></tr>
     <tr>
       <th><label for="resolution">Resolution :</label></th>
       <td>
@@ -70,7 +70,7 @@
   <div id="racer">
     <div id="hud">
       <span id="speed"            class="hud"><span id="speed_value" class="value">0</span> mph</span>
-      <span id="current_lap_time" class="hud">Time: <span id="current_lap_time_value" class="value">0.0</span></span> 
+      <span id="current_lap_time" class="hud">Time: <span id="current_lap_time_value" class="value">0.0</span></span>
       <span id="last_lap_time"    class="hud">Last Lap: <span id="last_lap_time_value" class="value">0.0</span></span>
       <span id="fast_lap_time"    class="hud">Fastest Lap: <span id="fast_lap_time_value" class="value">0.0</span></span>
     </div>
@@ -409,7 +409,7 @@
     }
 
     function findSegment(z) {
-      return segments[Math.floor(z/segmentLength) % segments.length]; 
+      return segments[Math.floor(z/segmentLength) % segments.length];
     }
 
     //=========================================================================
@@ -470,7 +470,7 @@
       height = height || ROAD.HILL.NONE;
       addRoad(num, num, num, curve, height);
     }
-        
+
     function addLowRollingHills(num, height) {
       num    = num    || ROAD.LENGTH.SHORT;
       height = height || ROAD.HILL.LOW;
@@ -581,7 +581,7 @@
           offset = side * (1.5 + Math.random());
           addSprite(n + Util.randomInt(0, 50), sprite, offset);
         }
-          
+
       }
 
     }
@@ -684,5 +684,5 @@
 
   </script>
 
-</body> 
+</body>
 </html>
